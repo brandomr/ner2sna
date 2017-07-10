@@ -1,6 +1,6 @@
 
-var w = 800,
-    h = 600,
+var w = 600,
+    h = 400,
     fill = d3.scale.category20();
 
 var vis = d3.select("#chart")
@@ -17,7 +17,7 @@ var div = d3.select("body").append("div")
 
 d3.json("force.json", function(json) {
   var force = d3.layout.force()
-      .charge(-120)
+      .charge(-110)
       .linkDistance(30)
       .nodes(json.nodes)
       .links(json.links)
@@ -44,6 +44,7 @@ d3.json("force.json", function(json) {
       .style("fill", function(d) { return fill(d.group); })
       .call(force.drag);
 
+  node.on("mousedown", function(d) { d.fixed = true; });
   node.on("mouseover", function(d) {      
             div.transition()        
                 .duration(200)      
