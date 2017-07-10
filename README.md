@@ -20,4 +20,4 @@ If you're not familiar with these libraries, don't worry, I'll make it easy to g
 ### Running the code
 You should downoad and run `ner2sna.ipynb`. It will walk you through everything you need. You can use `corpus.txt` as a sample data set if you'd like. Also, make sure to capture the `force` directory when you try to run this on your own. You need `force/force.html`, `force/force.css`, and `force/force.js` in order to create the chart at the end of the guide.
 
-If you have any questions for me, feel free to reach out on Twitter to @brandonmrose or open up an issue on the github repo.
+If you have any questions for me, feel free to reach out on Twitter to [@brandonmrose](http://twitter.com/brandonmrose) or open up an issue on the github repo.
